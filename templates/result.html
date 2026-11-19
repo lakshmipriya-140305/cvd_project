@@ -1,0 +1,26 @@
+
+<h2>Machine Learning Prediction</h2>
+
+{% if prediction == 1 %}
+
+    <h3 style="color:red;">
+        Heart Disease Detected
+    </h3>
+
+{% else %}
+
+    <h3 style="color:green;">
+        No Heart Disease Detected
+    </h3>
+
+{% endif %}
+
+<p>
+    Predicted probability of Heart Disease:
+    <strong>{{ probability }}%</strong>
+</p>
+
+<p>
+    This is an educational ML prediction,
+    not a medical diagnosis.
+</p>
